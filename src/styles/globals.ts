@@ -17,7 +17,7 @@ export const globalStyles = globalCss({
   },
 
   'body > div > main': {
-    background: '$bg',
+    background: 'PowderBlue',
   },
 
   a: {

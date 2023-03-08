@@ -12,7 +12,7 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      bg: '#fff',
+      bg: 'red',
     },
   },
   media: {
@@ -37,7 +37,7 @@ export const dark = createTheme({
 
 export const light = createTheme({
   colors: {
-    bgLinearGradient: 'linear-gradient(180deg, #2764FF 0%, #0F2A72 100%)',
+    bgLinearGradient: 'rgb(7, 0, 53)',
     bg: '#FFFFFF',
     surface: '#F4F4F4',
     primaryText: '#373839',
