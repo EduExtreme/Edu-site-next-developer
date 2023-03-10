@@ -63,14 +63,14 @@ export const HeroSection = styled('section', {
 
   h2: { marginBottom: '5rem' },
 
-  borderTop:"3px solid #41F2E1"
+  borderTop:"3px solid white"
   
 
   
 });
 
 export const ContentSection = styled('section', {
-  borderTop:"3px solid #41F2E1",
+  borderTop:"3px solid white",
   display: 'flex',
   width: '100%',
   height: '100%',

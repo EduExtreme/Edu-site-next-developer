@@ -25,10 +25,10 @@ export const {
 
 export const dark = createTheme({
   colors: {
-    bgheader: '#232426',
-    bg: ' #0D0D0D',
+    bgheader: '#060B2C',
+    bg: ' linear-gradient(90deg, rgba(6,0,15,0.01724439775910369) 0%, rgba(3,2,82,1) 0%, rgba(2,1,41,1) 0%)',
     surface: '#162640',
-    primaryText: '#41F2E1',
+    primaryText: 'white',
     primary: '#AACDFF',
     secondaryText: 'white',
     disabled: '#A7A7A7',
@@ -38,8 +38,8 @@ export const dark = createTheme({
 
 export const light = createTheme({
   colors: {
-    bgheader: '#023E73',
-    bg: '#D9D9D9',
+    bgheader: '#5E9FF2',
+    bg: 'linear-gradient(90deg, rgba(6,0,15,0.01724439775910369) 0%, rgba(3,2,82,1) 0%, rgba(2,1,41,1) 0%)',
     surface: '#F4F4F4',
     primaryText: 'white',
     primary: '#1163D6',
