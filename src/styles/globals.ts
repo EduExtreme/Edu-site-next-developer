@@ -1,3 +1,5 @@
+
+
 import { globalCss } from '../config/stitches';
 
 export const globalStyles = globalCss({
@@ -17,7 +19,7 @@ export const globalStyles = globalCss({
   },
 
   'body > div > main': {
-    background: 'PowderBlue',
+    background: '$bg',
   },
 
   a: {

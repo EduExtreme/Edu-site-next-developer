@@ -12,7 +12,7 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      bg: 'red',
+      bg: '$bg',
     },
   },
   media: {
@@ -25,24 +25,26 @@ export const {
 
 export const dark = createTheme({
   colors: {
-    bgLinearGradient: 'linear-gradient(180deg, #060B2C 0%, #1C0F2D 100%)',
-    bg: '#060B2C',
+    bgheader: '#232426',
+    bg: ' #0D0D0D',
     surface: '#162640',
-    primaryText: 'white',
+    primaryText: '#41F2E1',
     primary: '#AACDFF',
     secondaryText: 'white',
     disabled: '#A7A7A7',
+    transition: 'blue',
   },
 });
 
 export const light = createTheme({
   colors: {
-    bgLinearGradient: 'rgb(7, 0, 53)',
-    bg: '#FFFFFF',
+    bgheader: '#023E73',
+    bg: '#D9D9D9',
     surface: '#F4F4F4',
-    primaryText: '#373839',
+    primaryText: 'white',
     primary: '#1163D6',
     secondaryText: '#636363',
     disabled: '#A7A7A7',
+    transition: 'red',
   },
 });
