@@ -10,8 +10,10 @@ export const Navigation = styled('div', {
   margin: '0 auto',
   height: '100%',
   color: '$primaryText',
-  padding:'0rem 16.5rem',
+  padding:'1rem 16.5rem',
   backgroundColor: '$bgheader',
+  
+  
 
   '@md': {
     padding: '0 2rem',
@@ -19,7 +21,10 @@ export const Navigation = styled('div', {
 
   '.wrapper-nav': {
     display: 'flex',
+    gap:"1rem",
+    
     justifyContent: 'space-between',
+    
     a: {
       color: '$primaryText',
       transition: 'all .4s',

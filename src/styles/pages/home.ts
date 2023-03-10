@@ -22,15 +22,21 @@ export const HeroSection = styled('section', {
   animation: `${circleHesite} 3s ease-in-out `,
 
   div : {
+    width:'70%',
     display:"flex",
     alignItems:"center",
     gap:"0.5rem",
   },
+  span : {
+    fontSize:"2rem"
+  
+
+  },
   
 
   h1 : {
-    fontSize:"1.5rem",
-    width:"229px",
+    fontSize:"3rem",
+    width:"70%",
     '&:hover': {
       color: 'white',
     },
@@ -63,7 +69,7 @@ export const HeroSection = styled('section', {
 
   h2: { marginBottom: '5rem' },
 
-  borderTop:"3px solid white"
+ 
   
 
   

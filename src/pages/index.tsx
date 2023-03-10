@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import { ContentSection, HeroSection } from "@/styles/pages/home";
-import Image from "next/image";
-import webImage from "../../public/images/component-image.svg";
+
 import { DiCodeigniter } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { useTheme } from "@/hooks/useTheme";
@@ -18,10 +17,10 @@ export default function Home() {
           ) : (
             <DiCodeigniter size={20} />
           )}
-          <h1>Edudevs</h1>
+          <h1>Criação de sites</h1>
+          <span> & landing pages profissionais</span>
         </div>
 
-        <Image src={webImage} width={350} alt="only image"></Image>
         <p>Torne seu site melhor</p>
       </HeroSection>
 

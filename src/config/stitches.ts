@@ -25,8 +25,8 @@ export const {
 
 export const dark = createTheme({
   colors: {
-    bgheader: '#060B2C',
-    bg: ' linear-gradient(90deg, rgba(6,0,15,0.01724439775910369) 0%, rgba(3,2,82,1) 0%, rgba(2,1,41,1) 0%)',
+    bgheader: '#0f0f0f',
+    bg: ' linear-gradient(to top, #17232d, #181e26, #17191e, #141417, #0f0f0f)',
     surface: '#162640',
     primaryText: 'white',
     primary: '#AACDFF',
