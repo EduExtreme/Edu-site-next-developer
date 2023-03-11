@@ -26,7 +26,7 @@ export const {
 export const dark = createTheme({
   colors: {
     bgheader: '#0f0f0f',
-    bg: ' linear-gradient(to top, #17232d, #181e26, #17191e, #141417, #0f0f0f)',
+    bg: 'linear-gradient(to top, #17232d, #181e26, #17191e, #141417, #0f0f0f)',
     surface: '#162640',
     primaryText: 'white',
     primary: '#AACDFF',

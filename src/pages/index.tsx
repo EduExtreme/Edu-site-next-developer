@@ -1,27 +1,39 @@
 import Header from "@/components/Header";
 import { ContentSection, HeroSection } from "@/styles/pages/home";
-
-import { DiCodeigniter } from "react-icons/di";
+import codeHeroSection from "../../public/images/code-image.png"
+import codeContextHeroSection from "../../public/images/code-context-image.png"
 import { FaReact } from "react-icons/fa";
-import { useTheme } from "@/hooks/useTheme";
+
+import Image from "next/image";
 
 export default function Home() {
-  const { isLight } = useTheme();
+  
   return (
     <>
       <Header />
       <HeroSection>
-        <div>
-          {isLight ? (
-            <DiCodeigniter size={20} color="#1048e0" />
-          ) : (
-            <DiCodeigniter size={20} />
-          )}
+        <div className="text-title">
           <h1>Criação de sites</h1>
           <span> & landing pages profissionais</span>
         </div>
+       
+          <Image
+            src={codeHeroSection}
+            alt="code site image"
+            width={300}
+          />
 
-        <p>Torne seu site melhor</p>
+        <div className="image-control">
+          <Image
+            src={codeHeroSection}
+            alt="code context site image"
+            width={300}
+       
+          />
+        </div> 
+       
+
+       
       </HeroSection>
 
       <ContentSection>
@@ -38,6 +50,29 @@ export default function Home() {
           </p>
         </div>
       </ContentSection>
+      <HeroSection>
+        <div className="text-title">
+          <h1>Criação de sites</h1>
+          <span> & landing pages profissionais</span>
+        </div>
+       
+          <Image
+            src={codeHeroSection}
+            alt="code site image"
+            width={300}
+          />
+
+        <div className="image-control">
+          <Image
+            src={codeHeroSection}
+            alt="code context site image"
+            width={300}
+          />
+        </div> 
+       
+
+       
+      </HeroSection>
     </>
   );
 }

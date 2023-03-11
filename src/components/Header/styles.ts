@@ -14,6 +14,7 @@ export const Navigation = styled('div', {
   backgroundColor: '$bgheader',
   
   
+  
 
   '@md': {
     padding: '0 2rem',

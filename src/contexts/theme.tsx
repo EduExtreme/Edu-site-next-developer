@@ -18,6 +18,7 @@ interface ThemeContextData {
 export const ThemeContext = createContext({} as ThemeContextData);
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
+  
   const [theme, setTheme] = useState(light);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       return currentTheme === light ? dark : light;
     });
   };
-
+console.log("theme ?", theme)
   return (
     <ThemeContext.Provider
       value={{

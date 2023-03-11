@@ -20,6 +20,7 @@ export const globalStyles = globalCss({
 
   'body > div > main': {
     background: '$bg',
+    
   },
 
   a: {

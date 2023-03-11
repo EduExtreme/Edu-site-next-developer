@@ -10,38 +10,62 @@ const circleHesite = keyframes({
     },
   
 })
+
+
 export const HeroSection = styled('section', {
+  borderTop:"1px solid #41F2E1",
+  position:"relative",
   display: 'flex',
   width: '100%',
   height: '45vh',
-  color: '$primaryText',
+  color: " hsla(170, 77%, 52%, 1)",
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '0rem 16.5rem',
   margin: '0 auto',
   animation: `${circleHesite} 3s ease-in-out `,
+  
 
-  div : {
-    width:'70%',
-    display:"flex",
-    alignItems:"center",
+   
+  
+
+  ".text-title": {
+    width:'100%',
+   
+    
+    
     gap:"0.5rem",
-  },
-  span : {
-    fontSize:"2rem"
-  
 
-  },
-  
+    h1: {
+      
+      fontSize:"3rem",
+      color:"white",
 
-  h1 : {
-    fontSize:"3rem",
-    width:"70%",
-    '&:hover': {
-      color: 'white',
+      
+      '&:hover': {
+        color: ' hsla(170, 77%, 52%, 1)',
+      }, 
+
     },
-  
+
+    span:{
+      fontSize:"2rem",
+
+    }
   },
+
+ ".image-control" :{
+position:"absolute",
+right:"3rem",
+top:"3rem",
+
+"> img":{
+  objectFit:"cover"
+
+},
+ },
+
+
   p:{
     fontSize:"1.5rem",
     '&:hover': {
@@ -76,7 +100,7 @@ export const HeroSection = styled('section', {
 });
 
 export const ContentSection = styled('section', {
-  borderTop:"3px solid white",
+  borderTop:"1px solid #41F2E1",
   display: 'flex',
   width: '100%',
   height: '100%',
@@ -112,7 +136,9 @@ export const ContentSection = styled('section', {
   flexDirection:"column",
   width: '220px',
   height: '100%',
-  background:"#054A50",
+  border:"1px solid",
+ 
+  borderColor:"white",
   borderRadius:"1rem",
   padding:'0rem 1rem',
   
