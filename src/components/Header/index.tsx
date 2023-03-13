@@ -1,22 +1,18 @@
-import Image from "next/image";
-import { MdDarkMode, MdOutlineWbSunny } from "react-icons/md";
-import developerDark from "../../../public/images/developer-transparent-icon.png";
-import developerLight from "../../../public/images/developer-icon.png";
-import codeIcon from "../../../public/images/code-icon.svg";
-import { GoBackButton } from "@/components/GoBackButton";
-import { useRouter } from "next/router";
-import { Button, Container, Navigation } from "./styles";
-import { useTheme } from "@/hooks/useTheme";
-import Link from "next/link";
-import { DiCodeigniter } from "react-icons/di";
+import { MdDarkMode, MdOutlineWbSunny } from 'react-icons/md'
+import { GoBackButton } from '@/components/GoBackButton'
+import { useRouter } from 'next/router'
+import { Button, Container, Navigation } from './styles'
+import { useTheme } from '@/hooks/useTheme'
+import Link from 'next/link'
+import { DiCodeigniter } from 'react-icons/di'
 
 export default function Header() {
-  const router = useRouter();
-  const { onChangeTheme, isLight } = useTheme();
+  const router = useRouter()
+  const { onChangeTheme, isLight } = useTheme()
   return (
     <Container>
       <Navigation>
-        {router.pathname !== "/" && <GoBackButton />}
+        {router.pathname !== '/' && <GoBackButton />}
         {isLight ? (
           <DiCodeigniter size={50} color="#1048e0" />
         ) : (
@@ -37,5 +33,5 @@ export default function Header() {
         </Button>
       </Navigation>
     </Container>
-  );
+  )
 }

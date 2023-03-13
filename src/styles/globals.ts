@@ -14,7 +14,7 @@ export const globalStyles = globalCss({
   },
 
   'body, input, textarea, button': {
-    fontFamily: 'Lato, sans-serif',
+    fontFamily: 'Kumbh Sans, sans-serif',
     fontWeight: 400,
   },
 

@@ -30,7 +30,7 @@ export const HeroSection = styled('section', {
   
 
   ".text-title": {
-    width:'100%',
+    width:'50%',
    
     
     
@@ -50,17 +50,36 @@ export const HeroSection = styled('section', {
 
     span:{
       fontSize:"2rem",
+      '&:hover': {
+        color: 'white',
+      }, 
+
+
+    },
+
+    p:{
+      marginTop:"2rem",
+      fontSize:"1rem",
+      color:"white",
+
+      
+      '&:hover': {
+        color: ' hsla(170, 77%, 52%, 1)',
+      }, 
 
     }
   },
 
  ".image-control" :{
 position:"absolute",
-right:"3rem",
-top:"3rem",
+right:"16rem",
+top:"5rem",
+
 
 "> img":{
-  objectFit:"cover"
+  width:"550px",
+  height:"400px"
+  
 
 },
  },
@@ -100,7 +119,7 @@ top:"3rem",
 });
 
 export const ContentSection = styled('section', {
-  borderTop:"1px solid #41F2E1",
+  
   display: 'flex',
   width: '100%',
   height: '100%',

@@ -1,13 +1,13 @@
-import Header from "@/components/Header";
-import { ContentSection, HeroSection } from "@/styles/pages/home";
-import codeHeroSection from "../../public/images/code-image.png"
-import codeContextHeroSection from "../../public/images/code-context-image.png"
-import { FaReact } from "react-icons/fa";
+import Header from '@/components/Header'
+import { ContentSection, HeroSection } from '@/styles/pages/home'
+import codeHeroSection from '../../public/images/code-image.png'
+import developerMonitor from '../../public/images/developer-monitor.png'
 
-import Image from "next/image";
+import { FaReact } from 'react-icons/fa'
+
+import Image from 'next/image'
 
 export default function Home() {
-  
   return (
     <>
       <Header />
@@ -15,25 +15,14 @@ export default function Home() {
         <div className="text-title">
           <h1>Criação de sites</h1>
           <span> & landing pages profissionais</span>
+          <p>This client will realy change your development workflow.</p>
         </div>
-       
-          <Image
-            src={codeHeroSection}
-            alt="code site image"
-            width={300}
-          />
+
+        {/* <Image src={codeHeroSection} alt="code site image" width={300} /> */}
 
         <div className="image-control">
-          <Image
-            src={codeHeroSection}
-            alt="code context site image"
-            width={300}
-       
-          />
-        </div> 
-       
-
-       
+          <Image src={developerMonitor} alt="code context site image" />
+        </div>
       </HeroSection>
 
       <ContentSection>
@@ -55,12 +44,8 @@ export default function Home() {
           <h1>Criação de sites</h1>
           <span> & landing pages profissionais</span>
         </div>
-       
-          <Image
-            src={codeHeroSection}
-            alt="code site image"
-            width={300}
-          />
+
+        <Image src={codeHeroSection} alt="code site image" width={300} />
 
         <div className="image-control">
           <Image
@@ -68,11 +53,8 @@ export default function Home() {
             alt="code context site image"
             width={300}
           />
-        </div> 
-       
-
-       
+        </div>
       </HeroSection>
     </>
-  );
+  )
 }
